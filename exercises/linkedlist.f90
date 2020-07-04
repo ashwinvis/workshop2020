@@ -20,6 +20,7 @@ module linkedlists
 
     type linked_list
         type(element_data)         :: data
+        ! NOTE: recursive types using pointers
         type(linked_list), pointer :: next => null()
     contains
         procedure :: insert => insert_element
